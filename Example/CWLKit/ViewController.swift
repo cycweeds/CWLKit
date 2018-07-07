@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    let a = AppDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let a = UIView().cwl_borderColor
+
+        let b = UIView().mid_x
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

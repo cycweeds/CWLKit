@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+// 这个只要一次使用 别的地方就不需要import了   swift的私有属性
+@_exported import CWLKit
+
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,8 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+            
+
+        let a = UIView().cwl_borderColor
+
         
-        kScreenWidth
+        UIView().mid_y
 
         
         return true

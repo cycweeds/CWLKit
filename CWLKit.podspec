@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CWLKit.'
+  s.summary          = 'CWLKit: easy to use'
   s.swift_version = '4.0'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CWLKit/Classes/**/*'
+  s.source_files = "CWLKit/Classes/**/*"
   
   # s.resource_bundles = {
   #   'CWLKit' => ['CWLKit/Assets/*.png']

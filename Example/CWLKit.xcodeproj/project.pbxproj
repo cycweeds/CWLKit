@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0941834420F1289900038817 /* d.m in Sources */ = {isa = PBXBuildFile; fileRef = 0941834320F1289900038817 /* d.m */; };
+		0941834720F12C5C00038817 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941834620F12C5C00038817 /* Main.swift */; };
 		1DA2DE086E5CA059817C9F41 /* Pods_CWLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57091E1BA3982EDD1931D363 /* Pods_CWLKit_Example.framework */; };
 		39B766CC4EAED757AA19E336 /* Pods_CWLKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDCC3D8423ED7B48D1AF2DA /* Pods_CWLKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -29,6 +31,11 @@
 
 /* Begin PBXFileReference section */
 		053B10CECD988FB9D7A4BBB3 /* Pods-CWLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Tests/Pods-CWLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0941834120F1289900038817 /* CWLKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWLKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		0941834220F1289900038817 /* d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = d.h; sourceTree = "<group>"; };
+		0941834320F1289900038817 /* d.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = d.m; sourceTree = "<group>"; };
+		0941834520F128EA00038817 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0941834620F12C5C00038817 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		57091E1BA3982EDD1931D363 /* Pods_CWLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* CWLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				0941834520F128EA00038817 /* PrefixHeader.pch */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CWLKit */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -119,6 +127,10 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				0941834220F1289900038817 /* d.h */,
+				0941834320F1289900038817 /* d.m */,
+				0941834120F1289900038817 /* CWLKit_Example-Bridging-Header.h */,
+				0941834620F12C5C00038817 /* Main.swift */,
 			);
 			name = "Example for CWLKit";
 			path = CWLKit;
@@ -213,7 +225,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0940;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -347,7 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0941834420F1289900038817 /* d.m in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0941834720F12C5C00038817 /* Main.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +508,17 @@
 			baseConfigurationReference = 85D5A19C1CDA3A09D4FF4FCE /* Pods-CWLKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				INFOPLIST_FILE = CWLKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CWLKit/CWLKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -509,11 +529,16 @@
 			baseConfigurationReference = A44C700513EB7583661CAB91 /* Pods-CWLKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				INFOPLIST_FILE = CWLKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CWLKit/CWLKit_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

@@ -3,7 +3,7 @@ import UIKit
 
 // just to easy use
 extension UIView {
-    var x: CGFloat {
+   @objc var x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -42,6 +42,7 @@ extension UIView {
     var max_x: CGFloat {
         get {
             return self.frame.maxX
+            
         }
     }
     
@@ -68,16 +69,14 @@ extension UIView {
 
 extension UIView {
     
-    func toImage(_ size: CGSize) -> UIImage {
-        
-        UIGraphicsBeginImageContextWithOptions(size, true, 0)
+    func toImage(_ size: CGSize? = nil) -> UIImage {
+        let contentSize = (size != nil) ? size! : self.bounds.size
+        UIGraphicsBeginImageContextWithOptions(contentSize, true, 0)
         let ctx = UIGraphicsGetCurrentContext()
-        
         ctx!.saveGState()
         layer.render(in: ctx!)
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         return img!
     }
 }
@@ -102,7 +101,6 @@ extension UIView {
         }
         set {
             self.layer.borderWidth = newValue
-            
         }
     }
     
@@ -111,8 +109,6 @@ extension UIView {
             return self.layer.borderColor != nil
                 ? UIColor(cgColor: self.layer.borderColor!)
                 : nil
-            
-
         }
         set {
             self.layer.borderColor = newValue?.cgColor

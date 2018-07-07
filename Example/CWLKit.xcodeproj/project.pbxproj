@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* CWLKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWLKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69F8482A83F2ADF80123EC68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		69F8482A83F2ADF80123EC68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6B396035683575A594E67B60 /* Pods-CWLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Tests/Pods-CWLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		85D5A19C1CDA3A09D4FF4FCE /* Pods-CWLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		85EC1F5A5645C11094111FF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9C792C06BC601227545A33F6 /* CWLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CWLKit.podspec; path = ../CWLKit.podspec; sourceTree = "<group>"; };
+		85EC1F5A5645C11094111FF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C792C06BC601227545A33F6 /* CWLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWLKit.podspec; path = ../CWLKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A44C700513EB7583661CAB91 /* Pods-CWLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DFDCC3D8423ED7B48D1AF2DA /* Pods_CWLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

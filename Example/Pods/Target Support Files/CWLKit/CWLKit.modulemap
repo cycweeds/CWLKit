@@ -1,0 +1,6 @@
+framework module CWLKit {
+  umbrella header "CWLKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

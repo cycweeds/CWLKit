@@ -1,11 +1,21 @@
+//
+//  UIView+Extension.swift
+//  CWLKit
+//
+//  Created by cyc on 2018/11/6.
+//
 
 import UIKit
 
-// just to easy use
+// just easy to  use
 extension UIView {
     public var x: CGFloat {
         get {
             return self.frame.origin.x
+        }
+        
+        set {
+            frame.origin.x = newValue
         }
     }
     
@@ -13,17 +23,40 @@ extension UIView {
         get {
             return self.frame.origin.y
         }
+        
+        set {
+            frame.origin.y = newValue
+        }
     }
     
     public var width: CGFloat {
         get {
             return self.frame.size.width
         }
+        
+        set {
+            frame.size.width = newValue
+        }
     }
     
     public var height: CGFloat {
         get {
             return self.frame.size.height
+        }
+        
+        set {
+            frame.size.height = newValue
+        }
+    }
+    
+    public var size: CGSize {
+        get {
+            return frame.size
+        }
+        
+        set {
+            width = newValue.width
+            height = newValue.height
         }
     }
     
@@ -66,9 +99,9 @@ extension UIView {
 }
 
 
-//MARK:- Xib or Storyboard needs
+//MARK:- Xib or Storyboard Needs
 extension UIView {
-    @IBInspectable public var cwl_cornerRadius : CGFloat {
+    @IBInspectable public var cornerRadius : CGFloat {
         get {
             return self.layer.cornerRadius
         }
@@ -78,7 +111,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var cwl_borderWidth : CGFloat {
+    @IBInspectable public var borderWidth : CGFloat {
         get {
             return self.layer.borderWidth
         }
@@ -87,7 +120,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var cwl_borderColor : UIColor? {
+    @IBInspectable public var borderColor : UIColor? {
         get {
             return self.layer.borderColor != nil
                 ? UIColor(cgColor: self.layer.borderColor!)
@@ -97,35 +130,55 @@ extension UIView {
             self.layer.borderColor = newValue?.cgColor
         }
     }
-}
-
-//MARK:- 可能用到的方法
-extension UIView {
     
-    
-    /// 生产image
-    ///
-    /// - Parameter size:
-    /// - Returns: <#return value description#>
-    public func cwl_generateImage(_ size: CGSize? = nil) -> UIImage {
-        let contentSize = (size != nil) ? size! : self.bounds.size
-        UIGraphicsBeginImageContextWithOptions(contentSize, true, 0)
-        let ctx = UIGraphicsGetCurrentContext()
-        ctx!.saveGState()
-        layer.render(in: ctx!)
-        let img = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return img!
+    @IBInspectable public var shadowColor: UIColor? {
+        get {
+            guard let color = layer.shadowColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+        set {
+            layer.shadowColor = newValue?.cgColor
+        }
     }
     
+    @IBInspectable public var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        }
+        set {
+            layer.shadowOffset = newValue
+        }
+    }
+    
+    @IBInspectable public var shadowOpacity: Float {
+        get {
+            return layer.shadowOpacity
+        }
+        set {
+            layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable public var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set {
+            layer.shadowRadius = newValue
+        }
+    }
+}
+
+//MARK:-
+extension UIView {
     
     
     /// 获取试图某一点的颜色
     ///
-    /// - Parameter point: <#point description#>
-    /// - Returns: <#return value description#>
+    /// - Parameter point: 当前view内的位置
+    /// - Returns: UIColor
     public func cwl_colorOfPoint (point: CGPoint) -> UIColor {
-        let pixel = UnsafeMutableRawPointer.allocate(bytes: 4 * MemoryLayout<UInt8>.stride, alignedTo: MemoryLayout<UInt8>.alignment)
+        let pixel = UnsafeMutableRawPointer.allocate(byteCount: 4 * MemoryLayout<UInt8>.stride, alignment: MemoryLayout<UInt8>.alignment)
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue
         guard let context = CGContext(data: pixel, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4, space: colorSpace, bitmapInfo: bitmapInfo) else {

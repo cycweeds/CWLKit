@@ -20,7 +20,7 @@ public let appKeyWindow: UIWindow? = UIApplication.shared.delegate?.window ?? ni
 
 
 
-public func safeAsync(_ code: @escaping () -> ()) {
+public func safeMainThreadAsync(_ code: @escaping () -> ()) {
     if Thread.current.isMainThread {
         code()
     } else {

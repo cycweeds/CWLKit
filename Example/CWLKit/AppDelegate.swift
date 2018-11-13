@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
             
 
-        let a = UIView().cwl_borderColor
 
         
         UIView().mid_y

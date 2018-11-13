@@ -17,16 +17,3 @@ public let kScale: CGFloat = UIScreen.main.scale
 public let appKeyWindow: UIWindow? = UIApplication.shared.delegate?.window ?? nil
 
 
-
-
-
-public func safeMainThreadAsync(_ code: @escaping () -> ()) {
-    if Thread.current.isMainThread {
-        code()
-    } else {
-        DispatchQueue.main.async {
-            code()
-        }
-    }
-}
-

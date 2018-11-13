@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'CWLKit: easy to use'
   s.swift_version = '4.0'
 
@@ -23,13 +23,11 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/cycweeds/CWLKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'cycweeds' => 'cycweeds@gmail.com' }
   s.source           = { :git => 'https://github.com/cycweeds/CWLKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = "CWLKit/Classes/**/*"
   

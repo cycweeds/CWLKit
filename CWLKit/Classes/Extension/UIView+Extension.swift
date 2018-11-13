@@ -172,7 +172,6 @@ extension UIView {
 //MARK:-
 extension UIView {
     
-    
     /// 获取试图某一点的颜色
     ///
     /// - Parameter point: 当前view内的位置

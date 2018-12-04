@@ -9,7 +9,7 @@ import Foundation
 
 
 extension DispatchQueue {
-    public static func mainThreadAsync(_ excute: @escaping () -> ()) {
+    public static func cwl_mainThreadAsync(_ excute: @escaping () -> ()) {
         if Thread.current.isMainThread {
             excute()
         } else {
@@ -19,8 +19,7 @@ extension DispatchQueue {
         }
     }
     
-    
-    public func delay(second: TimeInterval, execute: @escaping () -> ()) {
+    public func cwl_delay(second: TimeInterval, execute: @escaping () -> ()) {
         self.asyncAfter(deadline: .now() + second, execute: execute)
         
     }

@@ -16,4 +16,3 @@ public let kScale: CGFloat = UIScreen.main.scale
 
 public let appKeyWindow: UIWindow? = UIApplication.shared.delegate?.window ?? nil
 
-

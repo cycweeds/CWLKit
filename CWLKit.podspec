@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'CWLKit'
   s.version          = '0.1.6'
   s.summary          = 'CWLKit: easy to use'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

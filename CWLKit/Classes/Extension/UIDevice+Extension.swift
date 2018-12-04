@@ -10,7 +10,7 @@ import Foundation
 extension UIDevice {
     
     /// 是否越狱
-    var isJailBreak: Bool {
+    public static var isJailBreak: Bool {
         let jailBreakFilePaths: [String] = ["/Applications/Cydia.app",
                                   "/Library/MobileSubstrate/MobileSubstrate.dylib",
                                   "/bin/bash",

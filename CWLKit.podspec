@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'CWLKit: easy to use'
   s.swift_version = '4.0'
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  添加 数据结构
+TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/cycweeds/CWLKit'

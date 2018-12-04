@@ -10,30 +10,27 @@ import UIKit
 
 
 
-
 class ViewController: UIViewController {
 
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: CGRect.zero)
+        
+        tableView.tableFooterView = UIView()
+        
+        tableView.cwl_registerCell(class: UITableViewCell.self)
+        
+        
+        
+        // register
+        return tableView
+    }()
     
-    let a = AppDelegate()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        DispatchQueue.main.delay(second: 10, execute: {
-            print("234")
-        })
-        
-        DispatchQueue.mainThreadAsync {
-            print("这是在主线程中")
-        }
-        
-        
-        DispatchQueue.global().async {
-            print("这在子主线程中")
-            DispatchQueue.mainThreadAsync {
-                print("这还是在主线程中")
-            }
-        }
     }
 
     override func didReceiveMemoryWarning() {

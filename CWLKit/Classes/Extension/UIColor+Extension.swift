@@ -15,7 +15,7 @@ extension UIColor {
     /// - Parameters:
     ///   - hexString: 0x
     ///   - alpha: 透明度
-    public convenience init?(hexString: String, alpha: CGFloat = 1.0) {
+    public convenience init(hexString: String, alpha: CGFloat = 1.0) {
         var formatted = hexString.replacingOccurrences(of: "0x", with: "")
         formatted = formatted.replacingOccurrences(of: "#", with: "")
         if let hex = Int(formatted, radix: 16) {
@@ -23,7 +23,7 @@ extension UIColor {
             let green = CGFloat(CGFloat((hex & 0x00FF00) >> 8)/255.0)
             let blue = CGFloat(CGFloat((hex & 0x0000FF) >> 0)/255.0)
             self.init(red: red, green: green, blue: blue, alpha: alpha)        } else {
-            return nil
+            fatalError("color not exist")
         }
     }
     

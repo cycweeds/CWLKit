@@ -22,14 +22,4 @@ extension UICollectionView {
         return sum
     }
     
-    public func cwl_registerCell<T: UICollectionViewCell>(class: T.Type) {
-        let reuseIdentifier = String(describing: `class`)
-        self.register(`class`, forCellWithReuseIdentifier: reuseIdentifier)
-    }
-    
-    public func cwl_registerNibCell<T: UICollectionViewCell>(class: T.Type, nibBunlde: Bundle?) {
-        let reuseIdentifier = String(describing: `class`)
-        self.register(UINib(nibName: reuseIdentifier, bundle: nibBunlde), forCellWithReuseIdentifier: reuseIdentifier)
-    }
-    
 }

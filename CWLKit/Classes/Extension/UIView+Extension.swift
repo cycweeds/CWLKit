@@ -169,14 +169,13 @@ extension UIView {
     }
 }
 
-//MARK:-
 extension UIView {
     
     /// 获取试图某一点的颜色
     ///
     /// - Parameter point: 当前view内的位置
     /// - Returns: UIColor
-    public func cwl_colorOfPoint (point: CGPoint) -> UIColor {
+    public func cwl_colorOfPoint(point: CGPoint) -> UIColor {
         let pixel = UnsafeMutableRawPointer.allocate(byteCount: 4 * MemoryLayout<UInt8>.stride, alignment: MemoryLayout<UInt8>.alignment)
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGImageAlphaInfo.premultipliedLast.rawValue
@@ -191,6 +190,19 @@ extension UIView {
         let blue: CGFloat = CGFloat(pixel.load(fromByteOffset: 2, as: UInt8.self)) / 255.0
         let alpha: CGFloat = 1.0
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
+    }
+    
+    
+    /// 生成UIImage
+    ///
+    /// - Parameter size: nil默认和自身frame大小一致
+    /// - Returns: UIImage对象
+    func generateImage(size: CGSize? = nil) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size ?? self.frame.size, false, kScale)
+        layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
     }
 }
 

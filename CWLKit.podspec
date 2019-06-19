@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '0.2.0'
+  s.version          = '0.2'
   s.summary          = 'CWLKit: 项目中常用的方法和类'
   s.swift_version = '4.2'
 

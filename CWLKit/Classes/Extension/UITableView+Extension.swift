@@ -6,31 +6,34 @@
 //
 
 import Foundation
-
-
-
-
-extension UITableView {
     
+public extension CWLKit where Base: UITableView {
     /// 取消自动适配功能
-    public func cwl_cancelSelfSizing() {
-        self.estimatedRowHeight = 0
-        self.estimatedSectionFooterHeight = 0
-        self.estimatedSectionHeaderHeight = 0
+    func cancelSelfSizing() {
+        base.estimatedRowHeight = 0
+        base.estimatedSectionFooterHeight = 0
+        base.estimatedSectionHeaderHeight = 0
     }
     
-    public var cwl_totalRows: Int {
-        let sectionCount = self.numberOfSections
-        if sectionCount == 0 {
-            return 0
-        }
-        
+    var totalRows: Int {
+        let sectionCount = base.numberOfSections
         var sum = 0
         for section in 0..<sectionCount {
-            sum += self.numberOfRows(inSection: section)
+            sum += base.numberOfRows(inSection: section)
         }
         return sum
     }
-
- 
 }
+
+
+public extension CWLKit where Base: UICollectionView {
+    var totalRows: Int {
+        let sectionCount = base.numberOfSections
+        var sum = 0
+        for section in 0..<sectionCount {
+            sum += base.numberOfItems(inSection: section)
+        }
+        return sum
+    }
+}
+

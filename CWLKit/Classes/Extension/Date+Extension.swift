@@ -7,38 +7,47 @@
 
 import Foundation
 
-extension Date {
-    public var year: Int {
+public extension Date {
+    var year: Int {
         return Calendar.current.component(.year, from: self)
     }
     
-    public var month: Int {
+    var month: Int {
         return Calendar.current.component(.month, from: self)
     }
     
-    public var day: Int {
+    var day: Int {
         return Calendar.current.component(.day, from: self)
     }
     
-    public var minute: Int {
+    var hour: Int {
+              return Calendar.current.component(Calendar.Component.hour, from: self)
+          }
+    
+    var minute: Int {
         return Calendar.current.component(Calendar.Component.minute, from: self)
     }
+   
     
-    public var second: Int {
+    var second: Int {
         return Calendar.current.component(Calendar.Component.second, from: self)
     }
     
-    public var weekday: Int {
+    var nanosecond: Int {
+        return Calendar.current.component(Calendar.Component.nanosecond, from: self)
+    }
+    
+    var weekday: Int {
         return Calendar.current.component(Calendar.Component.weekday, from: self)
     }
     
-    public var isToday: Bool {
+    var isToday: Bool {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter.string(from: self) == formatter.string(from: Date())
     }
     
-    public var isYesterday: Bool {
+    var isYesterday: Bool {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter.string(from: self) == formatter.string(from: Date(timeIntervalSinceNow: -60 * 60 * 24))

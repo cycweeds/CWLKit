@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         tableView.tableFooterView = UIView()
         
-        tableView.cwl_registerCell(class: UITableViewCell.self)
+        tableView.cwl.registerCell(class: UITableViewCell.self)
         
         
         

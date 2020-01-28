@@ -20,9 +20,11 @@
 		0966C976219423F800C813AA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C975219423F800C813AA /* UIImage+Extension.swift */; };
 		0966C9862194329100C813AA /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C9852194329100C813AA /* DispatchQueue.swift */; };
 		0975AE8A21B6502500CCB8E1 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975AE8921B6502500CCB8E1 /* UIDevice+Extension.swift */; };
+		098282D423E0076600FB344B /* CWLKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D323E0076600FB344B /* CWLKit.swift */; };
+		098282D623E0135200FB344B /* UIViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D523E0135200FB344B /* UIViewUtil.swift */; };
+		098282D823E01A3F00FB344B /* CG+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D723E01A3F00FB344B /* CG+Extension.swift */; };
 		09BC232F219143C700FFF3A8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC232E219143C700FFF3A8 /* UITableView+Extension.swift */; };
 		09BC23312191604B00FFF3A8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC23302191604B00FFF3A8 /* UIColor+Extension.swift */; };
-		09D3BA5C22BA699C001854EB /* UITabelViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D3BA5B22BA699C001854EB /* UITabelViewCell+Extension.swift */; };
 		09D3BA5E22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D3BA5D22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift */; };
 		0A1A3DC52B83AA8A153A008710FCBFFA /* NBSMockedApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E103702ABBD58F315C182A4866454 /* NBSMockedApplication.m */; };
 		0A2CA8B0DD7E300ABFCF1956E6B58248 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BD6C92C04852276647CF58AD53276A /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -255,10 +257,12 @@
 		0966C975219423F800C813AA /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0966C9852194329100C813AA /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		0975AE8921B6502500CCB8E1 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		098282D323E0076600FB344B /* CWLKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWLKit.swift; sourceTree = "<group>"; };
+		098282D523E0135200FB344B /* UIViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtil.swift; sourceTree = "<group>"; };
+		098282D723E01A3F00FB344B /* CG+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Extension.swift"; sourceTree = "<group>"; };
 		0999D8E772AB02DD29403AF44FF3BFE5 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		09BC232E219143C700FFF3A8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		09BC23302191604B00FFF3A8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		09D3BA5B22BA699C001854EB /* UITabelViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelViewCell+Extension.swift"; sourceTree = "<group>"; };
 		09D3BA5D22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewAndCollectionView+Ex.swift"; sourceTree = "<group>"; };
 		09FFB8DE4A4FBBFAD4F83F78D3C76331 /* HaveValidDynamicTypeSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveValidDynamicTypeSnapshot.swift; path = DynamicType/HaveValidDynamicTypeSnapshot.swift; sourceTree = "<group>"; };
 		0AD77CD1FD4FCF047E861849B8A77C74 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Sources/Quick/Example.swift; sourceTree = "<group>"; };
@@ -540,8 +544,9 @@
 				0966C975219423F800C813AA /* UIImage+Extension.swift */,
 				0966C9852194329100C813AA /* DispatchQueue.swift */,
 				0975AE8921B6502500CCB8E1 /* UIDevice+Extension.swift */,
-				09D3BA5B22BA699C001854EB /* UITabelViewCell+Extension.swift */,
 				09D3BA5D22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift */,
+				098282D523E0135200FB344B /* UIViewUtil.swift */,
+				098282D723E01A3F00FB344B /* CG+Extension.swift */,
 			);
 			name = Extension;
 			path = CWLKit/Classes/Extension;
@@ -837,6 +842,7 @@
 				0916AECA21B66F3000FF2213 /* Data Stucture */,
 				0941834920F13C2700038817 /* Extension */,
 				1E6119DD56F5DE705AD4EA6B4069734B /* CWLUtils.swift */,
+				098282D323E0076600FB344B /* CWLKit.swift */,
 				ECE527023FAD317D7CE7D84FDA5E5476 /* Pod */,
 				AB42A24588037E732FA91C7917EB2EB2 /* Support Files */,
 			);
@@ -1285,12 +1291,14 @@
 				0941834B20F13C2700038817 /* UIView+Extension.swift in Sources */,
 				8C9A25D6A37443D3913B4586826259A7 /* CWLUtils.swift in Sources */,
 				0916AED121B66F3000FF2213 /* Tree.swift in Sources */,
+				098282D423E0076600FB344B /* CWLKit.swift in Sources */,
 				0966C976219423F800C813AA /* UIImage+Extension.swift in Sources */,
 				09BC232F219143C700FFF3A8 /* UITableView+Extension.swift in Sources */,
 				0966C9742194227700C813AA /* Date+Extension.swift in Sources */,
-				09D3BA5C22BA699C001854EB /* UITabelViewCell+Extension.swift in Sources */,
 				09BC23312191604B00FFF3A8 /* UIColor+Extension.swift in Sources */,
 				6A1EE4FC0B4C168A0E712E98C54242BE /* CWLKit-dummy.m in Sources */,
+				098282D823E01A3F00FB344B /* CG+Extension.swift in Sources */,
+				098282D623E0135200FB344B /* UIViewUtil.swift in Sources */,
 				0916AED221B66F3000FF2213 /* Queue.swift in Sources */,
 				0966C9862194329100C813AA /* DispatchQueue.swift in Sources */,
 			);

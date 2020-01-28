@@ -13,7 +13,7 @@ extension UIColor {
     /// 用字符串初始化
     ///
     /// - Parameters:
-    ///   - hexString: 0x 或者 #开头
+    ///   - hexString: 0x 、 # 开头   + 6位字符串
     ///   - alpha: 透明度
     public convenience init(hexString: String, alpha: CGFloat = 1.0) {
         var formatted = hexString.replacingOccurrences(of: "0x", with: "")

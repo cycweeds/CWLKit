@@ -7,9 +7,9 @@
 
 import Foundation
 
-
-extension DispatchQueue {
-    public static func cwl_mainThreadAsync(_ excute: @escaping () -> ()) {
+extension DispatchQueue: CWLProtocol { }
+public extension CWLKit where Base: DispatchQueue {
+    static func mainThreadAsync(_ excute: @escaping () -> ()) {
         if Thread.current.isMainThread {
             excute()
         } else {
@@ -19,8 +19,8 @@ extension DispatchQueue {
         }
     }
     
-    public func cwl_delay(second: TimeInterval, execute: @escaping () -> ()) {
-        self.asyncAfter(deadline: .now() + second, execute: execute)
+    func delay(second: TimeInterval, execute: @escaping () -> ()) {
+        base.asyncAfter(deadline: .now() + second, execute: execute)
         
     }
 }

@@ -23,6 +23,9 @@
 		098282D423E0076600FB344B /* CWLKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D323E0076600FB344B /* CWLKit.swift */; };
 		098282D623E0135200FB344B /* UIViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D523E0135200FB344B /* UIViewUtil.swift */; };
 		098282D823E01A3F00FB344B /* CG+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D723E01A3F00FB344B /* CG+Extension.swift */; };
+		0987C3DA23E7DA73008F73BA /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */; };
+		0987C3DC23E7DBDF008F73BA /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987C3DB23E7DBDF008F73BA /* UITextField+Extension.swift */; };
+		0987C3DE23E8046A008F73BA /* UIView+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987C3DD23E8046A008F73BA /* UIView+Swizzling.swift */; };
 		09BC232F219143C700FFF3A8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC232E219143C700FFF3A8 /* UITableView+Extension.swift */; };
 		09BC23312191604B00FFF3A8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC23302191604B00FFF3A8 /* UIColor+Extension.swift */; };
 		09D3BA5E22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D3BA5D22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift */; };
@@ -260,6 +263,9 @@
 		098282D323E0076600FB344B /* CWLKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWLKit.swift; sourceTree = "<group>"; };
 		098282D523E0135200FB344B /* UIViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtil.swift; sourceTree = "<group>"; };
 		098282D723E01A3F00FB344B /* CG+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Extension.swift"; sourceTree = "<group>"; };
+		0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		0987C3DB23E7DBDF008F73BA /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		0987C3DD23E8046A008F73BA /* UIView+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Swizzling.swift"; sourceTree = "<group>"; };
 		0999D8E772AB02DD29403AF44FF3BFE5 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		09BC232E219143C700FFF3A8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		09BC23302191604B00FFF3A8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -547,6 +553,9 @@
 				09D3BA5D22BA6D44001854EB /* UITableViewAndCollectionView+Ex.swift */,
 				098282D523E0135200FB344B /* UIViewUtil.swift */,
 				098282D723E01A3F00FB344B /* CG+Extension.swift */,
+				0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */,
+				0987C3DB23E7DBDF008F73BA /* UITextField+Extension.swift */,
+				0987C3DD23E8046A008F73BA /* UIView+Swizzling.swift */,
 			);
 			name = Extension;
 			path = CWLKit/Classes/Extension;
@@ -1291,6 +1300,8 @@
 				0941834B20F13C2700038817 /* UIView+Extension.swift in Sources */,
 				8C9A25D6A37443D3913B4586826259A7 /* CWLUtils.swift in Sources */,
 				0916AED121B66F3000FF2213 /* Tree.swift in Sources */,
+				0987C3DA23E7DA73008F73BA /* UINavigationControllerExtensions.swift in Sources */,
+				0987C3DE23E8046A008F73BA /* UIView+Swizzling.swift in Sources */,
 				098282D423E0076600FB344B /* CWLKit.swift in Sources */,
 				0966C976219423F800C813AA /* UIImage+Extension.swift in Sources */,
 				09BC232F219143C700FFF3A8 /* UITableView+Extension.swift in Sources */,
@@ -1298,6 +1309,7 @@
 				09BC23312191604B00FFF3A8 /* UIColor+Extension.swift in Sources */,
 				6A1EE4FC0B4C168A0E712E98C54242BE /* CWLKit-dummy.m in Sources */,
 				098282D823E01A3F00FB344B /* CG+Extension.swift in Sources */,
+				0987C3DC23E7DBDF008F73BA /* UITextField+Extension.swift in Sources */,
 				098282D623E0135200FB344B /* UIViewUtil.swift in Sources */,
 				0916AED221B66F3000FF2213 /* Queue.swift in Sources */,
 				0966C9862194329100C813AA /* DispatchQueue.swift in Sources */,

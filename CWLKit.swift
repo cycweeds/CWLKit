@@ -9,7 +9,7 @@ import Foundation
 
 public protocol CWLProtocol {
     associatedtype CompatibleType
-    public var cwl: CompatibleType { get }
+    var cwl: CompatibleType { get }
 }
 
 public extension CWLProtocol {

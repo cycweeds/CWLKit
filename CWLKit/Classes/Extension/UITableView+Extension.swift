@@ -35,5 +35,21 @@ public extension CWLKit where Base: UICollectionView {
         }
         return sum
     }
+    
+    /// SwifterSwift: Scroll to bottom of TableView.
+    ///
+    /// - Parameter animated: set true to animate scroll (default is true).
+    func scrollToBottom(animated: Bool = true) {
+        let bottomOffset = CGPoint(x: 0, y: base.contentSize.height - base.bounds.size.height)
+        base.setContentOffset(bottomOffset, animated: animated)
+    }
+
+    /// SwifterSwift: Scroll to top of TableView.
+    ///
+    /// - Parameter animated: set true to animate scroll (default is true).
+    func scrollToTop(animated: Bool = true) {
+        base.setContentOffset(CGPoint.zero, animated: animated)
+    }
+    
 }
 

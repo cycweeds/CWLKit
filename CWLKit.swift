@@ -21,8 +21,8 @@ public extension CWLProtocol {
 
 
 public final class CWLKit<Base> {
-    public let base: Base
-    public init(_ base: Base) {
+    let base: Base
+    init(_ base: Base) {
         self.base = base
     }
 }

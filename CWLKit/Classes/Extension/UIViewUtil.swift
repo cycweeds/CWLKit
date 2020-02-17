@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 extension UIView: CWLProtocol { }
 
 public extension CWLKit where Base: UIView {

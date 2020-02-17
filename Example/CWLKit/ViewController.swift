@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         sss.isUserInteractionEnabled = true
         sss.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "cfff"))
         
+        
+        
     }
     
     @objc func cfff() {

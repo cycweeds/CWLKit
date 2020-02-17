@@ -6,6 +6,7 @@
 //
 import Foundation
 
+
 fileprivate protocol ReuseDefaultIdentifierProtocol {
     static func defaultIdentifier() -> String
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'CWLKit: 项目中常用的方法和类'
   s.swift_version = '4.2'
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = "CWLKit/Classes/*"
+  s.source_files = "CWLKit/Classes/**/*, CWLKit/Classes/*"
   
   # s.resource_bundles = {
   #   'CWLKit' => ['CWLKit/Assets/*.png']

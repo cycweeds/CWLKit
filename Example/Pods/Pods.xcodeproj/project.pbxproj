@@ -20,7 +20,7 @@
 		0966C976219423F800C813AA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C975219423F800C813AA /* UIImage+Extension.swift */; };
 		0966C9862194329100C813AA /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C9852194329100C813AA /* DispatchQueue.swift */; };
 		0975AE8A21B6502500CCB8E1 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975AE8921B6502500CCB8E1 /* UIDevice+Extension.swift */; };
-		098282D423E0076600FB344B /* CWLKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D323E0076600FB344B /* CWLKit.swift */; };
+		09804FC323FD07A700559862 /* CWLKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09804FC223FD07A700559862 /* CWLKit.swift */; };
 		098282D623E0135200FB344B /* UIViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D523E0135200FB344B /* UIViewUtil.swift */; };
 		098282D823E01A3F00FB344B /* CG+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098282D723E01A3F00FB344B /* CG+Extension.swift */; };
 		0987C3DA23E7DA73008F73BA /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */; };
@@ -260,7 +260,7 @@
 		0966C975219423F800C813AA /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0966C9852194329100C813AA /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		0975AE8921B6502500CCB8E1 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		098282D323E0076600FB344B /* CWLKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWLKit.swift; sourceTree = "<group>"; };
+		09804FC223FD07A700559862 /* CWLKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CWLKit.swift; path = CWLKit/Classes/CWLKit.swift; sourceTree = "<group>"; };
 		098282D523E0135200FB344B /* UIViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtil.swift; sourceTree = "<group>"; };
 		098282D723E01A3F00FB344B /* CG+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Extension.swift"; sourceTree = "<group>"; };
 		0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
@@ -848,7 +848,7 @@
 		E3B90EFB01CF40D86A5792F282608AC5 /* CWLKit */ = {
 			isa = PBXGroup;
 			children = (
-				098282D323E0076600FB344B /* CWLKit.swift */,
+				09804FC223FD07A700559862 /* CWLKit.swift */,
 				1E6119DD56F5DE705AD4EA6B4069734B /* CWLUtils.swift */,
 				0916AECA21B66F3000FF2213 /* Data Stucture */,
 				0941834920F13C2700038817 /* Extension */,
@@ -1302,7 +1302,7 @@
 				0916AED121B66F3000FF2213 /* Tree.swift in Sources */,
 				0987C3DA23E7DA73008F73BA /* UINavigationControllerExtensions.swift in Sources */,
 				0987C3DE23E8046A008F73BA /* UIView+Swizzling.swift in Sources */,
-				098282D423E0076600FB344B /* CWLKit.swift in Sources */,
+				09804FC323FD07A700559862 /* CWLKit.swift in Sources */,
 				0966C976219423F800C813AA /* UIImage+Extension.swift in Sources */,
 				09BC232F219143C700FFF3A8 /* UITableView+Extension.swift in Sources */,
 				0966C9742194227700C813AA /* Date+Extension.swift in Sources */,

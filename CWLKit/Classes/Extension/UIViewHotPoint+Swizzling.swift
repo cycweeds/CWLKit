@@ -13,16 +13,17 @@ public extension UIView {
         swizzleMethod(aClass: UIView.self, originalSelector: #selector(point(inside:with:)), swizzleSelector: #selector(swizzlePoint(inside:with:)))
     }()
     
-    private static var HotPointKey = "HotPointKey"
+    private static var HotPointKey = "CWLKit.HotPointKey"
     
     /// 点击区域增加
     var expandHotPoint: UIEdgeInsets? {
         set {
             _ = UIView.swizzlePointImplementation
-            objc_setAssociatedObject(self, &UIView.HotPointKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &UIView.HotPointKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
         }
         
         get {
+            _ = UIView.swizzlePointImplementation
             return objc_getAssociatedObject(self, &UIView.HotPointKey) as? UIEdgeInsets
         }
     }

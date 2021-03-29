@@ -7,7 +7,6 @@
 
 import UIKit
 
-// just easy to  use
 extension UIView {
     public var x: CGFloat {
         get {

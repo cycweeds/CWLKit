@@ -52,4 +52,8 @@ public extension CWLKit where Base: UIView {
         UIGraphicsEndImageContext()
         return image!
     }
+    
+    func removeSubviews() {
+        base.subviews.forEach { $0.removeFromSuperview() }
+    }
 }

@@ -8,8 +8,6 @@
 import Foundation
 
 
-
-
 // MARK: - Methods
 public extension CWLKit where Base : UIScrollView {
 

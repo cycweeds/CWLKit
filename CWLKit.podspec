@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '1.0.2'
+  s.version          = '1.1'
   s.summary          = 'CWLKit: 项目中常用的方法和类'
   s.swift_version = '4.2'
 
@@ -27,8 +27,9 @@ TODO: Add long description of the pod here.
   s.author           = { 'cycweeds' => 'cycweeds@gmail.com' }
   s.source           = { :git => 'https://github.com/cycweeds/CWLKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
+  # 文件顺序不能换  不然会无法通过
   s.source_files = 'CWLKit/Classes/*','CWLKit/Classes/**/*'
   
 end

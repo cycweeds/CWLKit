@@ -65,4 +65,12 @@ extension UIColor {
          }()
          return String(format: "#%02X%02X%02X", components[0], components[1], components[2])
      }
+    
+    
+    static var random: UIColor {
+        let red = Int.random(in: 0...255)
+        let green = Int.random(in: 0...255)
+        let blue = Int.random(in: 0...255)
+        return UIColor(red: red, green: green, blue: blue)!
+    }
 }

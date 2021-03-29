@@ -20,16 +20,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sss.backgroundColor = .green
-        sss.expandHotPoint = UIEdgeInsets(top: 30, left: 30, bottom: 40, right: 30)
-        sss.frame = CGRect(x: 100, y: 100, width: 40, height: 40)
-        view.addSubview(sss)
-        sss.tag = 111
-        sss.isUserInteractionEnabled = true
-        sss.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "cfff"))
+
+        minWindow("ABCDABC", "AB")
+    }
+    
+    func minWindow ( _ S: String,  _ T: String) -> String {
+            // write code here
+        
+        let pattern = T.map { String($0) }.joined(separator: ".*")
+        print(pattern)
+        do {
+            let expression = try NSRegularExpression.init(pattern: pattern, options: .allowCommentsAndWhitespace)
+            expression.enumerateMatches(in: S, options: .reportProgress, range: NSRange(location: 0, length: S.count - 1)) { (result, flags, isStop) in
+                if let range = result?.range {
+                    let substring = (T as NSString).substring(with: range)
+                    
+                    print(substring)
+                } else {
+                    print("Range没找到")
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
         
         
-        
+        return ""
     }
     
     @objc func cfff() {

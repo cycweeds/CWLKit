@@ -21,13 +21,12 @@ public extension Date {
     }
     
     var hour: Int {
-              return Calendar.current.component(Calendar.Component.hour, from: self)
-          }
+        return Calendar.current.component(Calendar.Component.hour, from: self)
+    }
     
     var minute: Int {
         return Calendar.current.component(Calendar.Component.minute, from: self)
     }
-   
     
     var second: Int {
         return Calendar.current.component(Calendar.Component.second, from: self)
@@ -51,5 +50,11 @@ public extension Date {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter.string(from: self) == formatter.string(from: Date(timeIntervalSinceNow: -60 * 60 * 24))
+    }
+    
+    var isTomorrow: Bool {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: self) == formatter.string(from: Date(timeIntervalSinceNow: 60 * 60 * 24))
     }
 }

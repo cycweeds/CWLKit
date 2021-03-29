@@ -39,7 +39,6 @@ public extension CWLKit where Base: UITableView {
         for `class` in classes {
             self.registerNibCell(class: `class`)
         }
-        
     }
     
     func registerNibCell<T: UITableViewCell>(class: T.Type, nibBunlde: Bundle? = nil) {

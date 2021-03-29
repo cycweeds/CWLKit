@@ -14,7 +14,7 @@ public extension CWLKit where Base: UITextField {
     ///
     /// - Parameter padding: amount of padding to apply to the left of the textfield rect.
     func addPaddingLeft(_ padding: CGFloat) {
-        base.leftView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: frame.height))
+        base.leftView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: base.frame.height))
         base.leftViewMode = .always
     }
 
@@ -22,7 +22,7 @@ public extension CWLKit where Base: UITextField {
     ///
     /// - Parameter padding: amount of padding to apply to the right of the textfield rect.
     func addPaddingRight(_ padding: CGFloat) {
-        base.rightView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: frame.height))
+        base.rightView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: base.frame.height))
         base.rightViewMode = .always
     }
 

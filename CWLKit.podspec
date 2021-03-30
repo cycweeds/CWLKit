@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
   s.version          = '1.1'
-  s.summary          = 'CWLKit: 项目中常用的方法和类'
+  s.summary          = '基于swift项目中常用的方法'
   s.swift_version = '4.2'
 
 # This description is used to generate tags and improve search results.

@@ -545,6 +545,7 @@
 		0941834920F13C2700038817 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0987C3DD23E8046A008F73BA /* UIViewHotPoint+Swizzling.swift */,
 				098282D523E0135200FB344B /* UIViewUtil.swift */,
 				0941834A20F13C2700038817 /* UIView+Extension.swift */,
 				09BC232E219143C700FFF3A8 /* UITableView+Extension.swift */,
@@ -558,7 +559,6 @@
 				098282D723E01A3F00FB344B /* CGGeometory+Ex.swift */,
 				0987C3D923E7DA73008F73BA /* UINavigationControllerExtensions.swift */,
 				0987C3DB23E7DBDF008F73BA /* UITextField+Extension.swift */,
-				0987C3DD23E8046A008F73BA /* UIViewHotPoint+Swizzling.swift */,
 				09650F2A2612275100B917A4 /* UIEdgeInsets+Ex.swift */,
 				09650F3A26122D6900B917A4 /* Data+Ex.swift */,
 				09650F4C26122FC500B917A4 /* Bool+Ex.swift */,

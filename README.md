@@ -5,11 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/CWLKit.svg?style=flat)](https://cocoapods.org/pods/CWLKit)
 [![Platform](https://img.shields.io/cocoapods/p/CWLKit.svg?style=flat)](https://cocoapods.org/pods/CWLKit)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+Swift 4.2 
+iOS 10.0
 
 ## Installation
 

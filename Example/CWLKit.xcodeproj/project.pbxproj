@@ -42,8 +42,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		69F8482A83F2ADF80123EC68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6B396035683575A594E67B60 /* Pods-CWLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Tests/Pods-CWLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		85D5A19C1CDA3A09D4FF4FCE /* Pods-CWLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				0941834520F128EA00038817 /* PrefixHeader.pch */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CWLKit */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				0966C97C219424EC00C813AA /* CWLKit_ExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				486DEB3209FCAEF15D0EB75D /* Pods */,
@@ -144,23 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -285,7 +265,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CWLKit/CWLKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -294,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7814690E30801D3F543C3FD /* [CP] Check Pods Manifest.lock */ = {

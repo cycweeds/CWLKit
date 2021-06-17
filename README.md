@@ -6,8 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/CWLKit.svg?style=flat)](https://cocoapods.org/pods/CWLKit)
 
 ## Requirements
-Swift 4.2 
-iOS 10.0
+Swift 5
+iOS 11.0
 
 ## Installation
 

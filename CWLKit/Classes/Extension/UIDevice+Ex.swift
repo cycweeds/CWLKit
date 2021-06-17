@@ -7,11 +7,14 @@
 
 import Foundation
 
-extension UIDevice {
+public extension UIDevice {
     
     /// 是否越狱
-    public static var isJailBreak: Bool {
-        let jailBreakFilePaths: [String] = ["/Applications/Cydia.app",
+    static var isJailBreak: Bool {
+        
+        // 默认苹果是只能访问沙盒路径下的权限  但是破解了能访问全部目录
+        
+        let jailBreakFilePaths: [String] = ["/Applications/Cydia.app", // Cydia 一款苹果破解软件
                                   "/Library/MobileSubstrate/MobileSubstrate.dylib",
                                   "/bin/bash",
                                   "/usr/sbin/sshd",

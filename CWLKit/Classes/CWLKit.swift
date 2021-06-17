@@ -19,7 +19,6 @@ public extension CWLProtocol {
 }
 
 
-
 public final class CWLKit<Base> {
     let base: Base
     init(_ base: Base) {

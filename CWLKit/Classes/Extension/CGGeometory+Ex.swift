@@ -8,14 +8,13 @@
 import Foundation
 
 
-extension CGSize {
-
+public extension CGSize {
     func scaled(_ scale: CGFloat) -> CGSize {
         return CGSize(width: self.width * scale, height: self.height * scale)
     }
 }
 
-extension CGRect {
+public extension CGRect {
     var center: CGPoint {
         get {
             return CGPoint(x: size.width / 2, y: size.height / 2)

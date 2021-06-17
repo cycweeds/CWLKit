@@ -4,3 +4,9 @@ target 'CWLKit_Example' do
   pod 'CWLKit', :path => '../'
 
 end
+
+
+target 'Tests' do
+  pod 'CWLKit', :path => '../'
+
+end

@@ -8,11 +8,12 @@
 import Foundation
 
 public extension Bool {
-    var int: Int {
+    
+    var intValue: Int {
         return self ? 1 : 0
     }
 
-    var string: String {
+    var stringValue: String {
         return self ? "true" : "false"
     }
 }

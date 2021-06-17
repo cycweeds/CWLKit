@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0966C97E219424EC00C813AA /* CWLKit_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C97D219424EC00C813AA /* CWLKit_ExampleTests.swift */; };
-		1DA2DE086E5CA059817C9F41 /* Pods_CWLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57091E1BA3982EDD1931D363 /* Pods_CWLKit_Example.framework */; };
+		0966C97E219424EC00C813AA /* StringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966C97D219424EC00C813AA /* StringTest.swift */; };
+		09A626ED267A31D400EBEAA3 /* BoolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A626EC267A31D400EBEAA3 /* BoolTest.swift */; };
+		09D8A5B9267A3D4F0050602D /* RuntimeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8A5B8267A3D4F0050602D /* RuntimeTest.swift */; };
+		09D8A5BB267AF9860050602D /* DateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8A5BA267AF9860050602D /* DateTest.swift */; };
+		09D8A5C0267B07690050602D /* UIEdgeInsetsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8A5BF267B07690050602D /* UIEdgeInsetsTest.swift */; };
+		1C5E1AEAA80A7B05897247AE /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D380BA6B8B01F5EC33300F /* Pods_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		AE2A8DA9E4A71A8666739A81 /* Pods_CWLKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BEBB5007C8CD2D487BE09C /* Pods_CWLKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0966C980219424EC00C813AA /* PBXContainerItemProxy */ = {
+		09D8A5B6267A36B90050602D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
@@ -27,14 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		053B10CECD988FB9D7A4BBB3 /* Pods-CWLKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Tests/Pods-CWLKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0941834120F1289900038817 /* CWLKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWLKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		0941834520F128EA00038817 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0966C97B219424EC00C813AA /* CWLKit_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWLKit_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0966C97D219424EC00C813AA /* CWLKit_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWLKit_ExampleTests.swift; sourceTree = "<group>"; };
+		0966C97B219424EC00C813AA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0966C97D219424EC00C813AA /* StringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTest.swift; sourceTree = "<group>"; };
 		0966C97F219424EC00C813AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096A1A1D24458E1000141167 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
-		57091E1BA3982EDD1931D363 /* Pods_CWLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A626EC267A31D400EBEAA3 /* BoolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTest.swift; sourceTree = "<group>"; };
+		09D8A5B8267A3D4F0050602D /* RuntimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTest.swift; sourceTree = "<group>"; };
+		09D8A5BA267AF9860050602D /* DateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTest.swift; sourceTree = "<group>"; };
+		09D8A5BF267B07690050602D /* UIEdgeInsetsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsTest.swift; sourceTree = "<group>"; };
+		5940637A7399F1EC435D2F52 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CWLKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWLKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,13 +49,14 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61330F376AE33E60AD2827B8 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		69F8482A83F2ADF80123EC68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6B396035683575A594E67B60 /* Pods-CWLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Tests/Pods-CWLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		80BEBB5007C8CD2D487BE09C /* Pods_CWLKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWLKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D5A19C1CDA3A09D4FF4FCE /* Pods-CWLKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		85EC1F5A5645C11094111FF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9C792C06BC601227545A33F6 /* CWLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWLKit.podspec; path = ../CWLKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A44C700513EB7583661CAB91 /* Pods-CWLKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWLKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DFDCC3D8423ED7B48D1AF2DA /* Pods_CWLKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWLKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D380BA6B8B01F5EC33300F /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5E1AEAA80A7B05897247AE /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,20 +72,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA2DE086E5CA059817C9F41 /* Pods_CWLKit_Example.framework in Frameworks */,
+				AE2A8DA9E4A71A8666739A81 /* Pods_CWLKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0966C97C219424EC00C813AA /* CWLKit_ExampleTests */ = {
+		0966C97C219424EC00C813AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0966C97D219424EC00C813AA /* CWLKit_ExampleTests.swift */,
 				0966C97F219424EC00C813AA /* Info.plist */,
+				0966C97D219424EC00C813AA /* StringTest.swift */,
+				09A626EC267A31D400EBEAA3 /* BoolTest.swift */,
+				09D8A5B8267A3D4F0050602D /* RuntimeTest.swift */,
+				09D8A5BA267AF9860050602D /* DateTest.swift */,
+				09D8A5BF267B07690050602D /* UIEdgeInsetsTest.swift */,
 			);
-			path = CWLKit_ExampleTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		486DEB3209FCAEF15D0EB75D /* Pods */ = {
@@ -84,8 +97,8 @@
 			children = (
 				85D5A19C1CDA3A09D4FF4FCE /* Pods-CWLKit_Example.debug.xcconfig */,
 				A44C700513EB7583661CAB91 /* Pods-CWLKit_Example.release.xcconfig */,
-				053B10CECD988FB9D7A4BBB3 /* Pods-CWLKit_Tests.debug.xcconfig */,
-				6B396035683575A594E67B60 /* Pods-CWLKit_Tests.release.xcconfig */,
+				61330F376AE33E60AD2827B8 /* Pods-Tests.debug.xcconfig */,
+				5940637A7399F1EC435D2F52 /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -93,8 +106,8 @@
 		5548BDC7C59E6F6624855A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57091E1BA3982EDD1931D363 /* Pods_CWLKit_Example.framework */,
-				DFDCC3D8423ED7B48D1AF2DA /* Pods_CWLKit_Tests.framework */,
+				80BEBB5007C8CD2D487BE09C /* Pods_CWLKit_Example.framework */,
+				F3D380BA6B8B01F5EC33300F /* Pods_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,10 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				096A1A1D24458E1000141167 /* TODO.md */,
-				0941834520F128EA00038817 /* PrefixHeader.pch */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CWLKit */,
-				0966C97C219424EC00C813AA /* CWLKit_ExampleTests */,
+				0966C97C219424EC00C813AA /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				486DEB3209FCAEF15D0EB75D /* Pods */,
 				5548BDC7C59E6F6624855A5D /* Frameworks */,
@@ -117,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* CWLKit_Example.app */,
-				0966C97B219424EC00C813AA /* CWLKit_ExampleTests.xctest */,
+				0966C97B219424EC00C813AA /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,22 +170,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0966C97A219424EC00C813AA /* CWLKit_ExampleTests */ = {
+		0966C97A219424EC00C813AA /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0966C982219424EC00C813AA /* Build configuration list for PBXNativeTarget "CWLKit_ExampleTests" */;
+			buildConfigurationList = 0966C982219424EC00C813AA /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
+				690DA253413359DFBE458CE2 /* [CP] Check Pods Manifest.lock */,
 				0966C977219424EC00C813AA /* Sources */,
 				0966C978219424EC00C813AA /* Frameworks */,
 				0966C979219424EC00C813AA /* Resources */,
+				B482CD621609D3A1D65E7356 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0966C981219424EC00C813AA /* PBXTargetDependency */,
+				09D8A5B7267A36B90050602D /* PBXTargetDependency */,
 			);
-			name = CWLKit_ExampleTests;
+			name = Tests;
 			productName = CWLKit_ExampleTests;
-			productReference = 0966C97B219424EC00C813AA /* CWLKit_ExampleTests.xctest */;
+			productReference = 0966C97B219424EC00C813AA /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		607FACCF1AFB9204008FA782 /* CWLKit_Example */ = {
@@ -233,7 +247,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* CWLKit_Example */,
-				0966C97A219424EC00C813AA /* CWLKit_ExampleTests */,
+				0966C97A219424EC00C813AA /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +280,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CWLKit/CWLKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CWLKit-iOS10.0/CWLKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -275,6 +289,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CWLKit_Example/Pods-CWLKit_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690DA253413359DFBE458CE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B482CD621609D3A1D65E7356 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CWLKit-iOS12.1/CWLKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWLKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7814690E30801D3F543C3FD /* [CP] Check Pods Manifest.lock */ = {
@@ -302,7 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0966C97E219424EC00C813AA /* CWLKit_ExampleTests.swift in Sources */,
+				0966C97E219424EC00C813AA /* StringTest.swift in Sources */,
+				09D8A5B9267A3D4F0050602D /* RuntimeTest.swift in Sources */,
+				09D8A5C0267B07690050602D /* UIEdgeInsetsTest.swift in Sources */,
+				09A626ED267A31D400EBEAA3 /* BoolTest.swift in Sources */,
+				09D8A5BB267AF9860050602D /* DateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +376,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0966C981219424EC00C813AA /* PBXTargetDependency */ = {
+		09D8A5B7267A36B90050602D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* CWLKit_Example */;
-			targetProxy = 0966C980219424EC00C813AA /* PBXContainerItemProxy */;
+			targetProxy = 09D8A5B6267A36B90050602D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,6 +405,7 @@
 /* Begin XCBuildConfiguration section */
 		0966C983219424EC00C813AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61330F376AE33E60AD2827B8 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -362,15 +421,15 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 2DVXS97SYN;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CWLKit_ExampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "cyc.CWLKit-ExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = cyc.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWLKit_Example.app/CWLKit_Example";
 			};
@@ -378,6 +437,7 @@
 		};
 		0966C984219424EC00C813AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5940637A7399F1EC435D2F52 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -392,13 +452,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DVXS97SYN;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CWLKit_ExampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "cyc.CWLKit-ExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = cyc.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWLKit_Example.app/CWLKit_Example";
 			};
@@ -518,7 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				INFOPLIST_FILE = CWLKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -541,7 +601,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/PrefixHeader.pch";
 				INFOPLIST_FILE = CWLKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -555,7 +615,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0966C982219424EC00C813AA /* Build configuration list for PBXNativeTarget "CWLKit_ExampleTests" */ = {
+		0966C982219424EC00C813AA /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0966C983219424EC00C813AA /* Debug */,

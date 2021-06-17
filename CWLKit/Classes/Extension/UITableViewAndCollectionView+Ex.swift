@@ -67,6 +67,8 @@ public extension CWLKit where Base: UITableView {
         let reuseIdentifier = `class`.defaultIdentifier()
         return base.dequeueReusableHeaderFooterView(withIdentifier: reuseIdentifier) as! T
     }
+    
+    
 }
 
 public extension CWLKit where Base: UICollectionView {
@@ -107,5 +109,10 @@ public extension CWLKit where Base: UICollectionView {
     func dequeueReusableSupplementaryView<T: UICollectionReusableView>(class: T.Type, kind: String, indexPath: IndexPath) -> T {
         return base.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: `class`.defaultIdentifier(), for: indexPath) as! T
     }
+    
+}
+
+public extension IndexPath {
+    static let zero = IndexPath(item: 0, section: 0)
     
 }

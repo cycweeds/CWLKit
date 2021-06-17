@@ -23,12 +23,11 @@ public extension UIView {
         }
         
         get {
-            _ = UIView.swizzlePointImplementation
             return objc_getAssociatedObject(self, &UIView.HotPointKey) as? UIEdgeInsets
         }
     }
     
-    @objc func swizzlePoint(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    @objc private func swizzlePoint(inside point: CGPoint, with event: UIEvent?) -> Bool {
         if let expandHotPoint = expandHotPoint {
             let hotPointFrame = CGRect(x: -expandHotPoint.left, y: -expandHotPoint.top, width: frame.size.width + expandHotPoint.left + expandHotPoint.right, height: frame.size.height + expandHotPoint.top + expandHotPoint.bottom)
             return hotPointFrame.contains(point)

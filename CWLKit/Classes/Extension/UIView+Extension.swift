@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIView {
-    public var x: CGFloat {
+public extension UIView {
+     var x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -18,7 +18,7 @@ extension UIView {
         }
     }
     
-    public var y: CGFloat {
+    var y: CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -28,7 +28,7 @@ extension UIView {
         }
     }
     
-    public var width: CGFloat {
+    var width: CGFloat {
         get {
             return self.frame.size.width
         }
@@ -38,7 +38,7 @@ extension UIView {
         }
     }
     
-    public var height: CGFloat {
+    var height: CGFloat {
         get {
             return self.frame.size.height
         }
@@ -48,7 +48,7 @@ extension UIView {
         }
     }
     
-    public var size: CGSize {
+    var size: CGSize {
         get {
             return frame.size
         }
@@ -59,38 +59,38 @@ extension UIView {
         }
     }
     
-    public var center_x: CGFloat {
+    var center_x: CGFloat {
         get {
             return self.center.x
         }
     }
     
-    public var center_y: CGFloat {
+    var center_y: CGFloat {
         get {
             return self.center.y
         }
     }
     
-    public var max_x: CGFloat {
+    var max_x: CGFloat {
         get {
             return self.frame.maxX
             
         }
     }
     
-    public var max_y: CGFloat {
+    var max_y: CGFloat {
         get {
             return self.frame.maxY
         }
     }
     
-    public var mid_x: CGFloat {
+    var mid_x: CGFloat {
         get {
             return self.frame.minX
         }
     }
     
-    public var mid_y: CGFloat {
+    var mid_y: CGFloat {
         get {
             return self.frame.minY
         }
@@ -99,8 +99,8 @@ extension UIView {
 
 
 //MARK:- Xib or Storyboard Needs
-extension UIView {
-    @IBInspectable public var cornerRadius : CGFloat {
+public extension UIView {
+    @IBInspectable var cornerRadius : CGFloat {
         get {
             return self.layer.cornerRadius
         }
@@ -110,7 +110,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var borderWidth : CGFloat {
+    @IBInspectable var borderWidth : CGFloat {
         get {
             return self.layer.borderWidth
         }
@@ -119,7 +119,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var borderColor : UIColor? {
+    @IBInspectable var borderColor : UIColor? {
         get {
             return self.layer.borderColor != nil
                 ? UIColor(cgColor: self.layer.borderColor!)
@@ -130,7 +130,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var shadowColor: UIColor? {
+    @IBInspectable var shadowColor: UIColor? {
         get {
             guard let color = layer.shadowColor else { return nil }
             return UIColor(cgColor: color)
@@ -140,7 +140,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var shadowOffset: CGSize {
+    @IBInspectable var shadowOffset: CGSize {
         get {
             return layer.shadowOffset
         }
@@ -149,7 +149,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var shadowOpacity: Float {
+    @IBInspectable var shadowOpacity: Float {
         get {
             return layer.shadowOpacity
         }
@@ -158,7 +158,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable public var shadowRadius: CGFloat {
+    @IBInspectable var shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
         }

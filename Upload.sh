@@ -12,7 +12,7 @@ echo '当前版本：'$versionNumber
 #
 # # 添加到git
 result=`git add .`
-echo '结果如果' $result
+echo '结果如果:' $result
 git commit -m "version $versionNumber update"
 # git tag ${versionNumber}
 # git push origin master --tags

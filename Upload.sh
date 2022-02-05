@@ -9,12 +9,12 @@ versionNumber=${versionNumber#*\'}
 versionNumber=${versionNumber%*\'}
 echo '当前版本：'$versionNumber
 
-
-# 添加到git
+#
+# # 添加到git
 git add .
 git commit -m "version $versionNumber update"
-git tag ${versionNumber}
-git push origin master --tags
+# git tag ${versionNumber}
+# git push origin master --tags
 
 
- pod trunk push ./$podspec
+ # pod trunk push ./$podspec

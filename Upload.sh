@@ -17,4 +17,4 @@ git tag ${versionNumber}
 git push origin master --tags
 
 
- pod trunk push $podspec
+ pod trunk push ./$podspec

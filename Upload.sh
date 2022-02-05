@@ -11,7 +11,8 @@ echo '当前版本：'$versionNumber
 
 #
 # # 添加到git
-git add .
+result=`git add .`
+echo result
 git commit -m "version $versionNumber update"
 # git tag ${versionNumber}
 # git push origin master --tags

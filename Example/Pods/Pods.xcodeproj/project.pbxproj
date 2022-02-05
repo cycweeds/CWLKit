@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01515CA10D0E083A577F12E438807D95 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BDFA61BBA0FEF1112C47237E8DCB5 /* UIImage+Extension.swift */; };
+		0995DA8627AD5B1200BB9D54 /* UIStackView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0995DA8527AD5B1100BB9D54 /* UIStackView+Ex.swift */; };
+		0995DA8727AD5B1200BB9D54 /* UIStackView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0995DA8527AD5B1100BB9D54 /* UIStackView+Ex.swift */; };
 		09D8A5BD267AFAB80050602D /* DateFormatter+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8A5BC267AFAB80050602D /* DateFormatter+Ex.swift */; };
 		09D8A5BE267AFAB80050602D /* DateFormatter+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8A5BC267AFAB80050602D /* DateFormatter+Ex.swift */; };
 		124B90A159C5840FEACA2847BF6C5778 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837462E6BF2B6CF026B1F1507E15B28 /* DispatchQueue.swift */; };
@@ -100,6 +102,7 @@
 		0746F2926D1FAE803472D75627337D62 /* CWLKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CWLKit.swift; path = CWLKit/Classes/CWLKit.swift; sourceTree = "<group>"; };
 		078A3A4B8651D58472A39CAAEAFAE9A3 /* UITextField+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		0951A647EC15E909977D9CAF88E0BC1F /* Bool+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bool+Ex.swift"; sourceTree = "<group>"; };
+		0995DA8527AD5B1100BB9D54 /* UIStackView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ex.swift"; sourceTree = "<group>"; };
 		09C201683E3E620065935FF873EBD75B /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		09D8A5BC267AFAB80050602D /* DateFormatter+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ex.swift"; sourceTree = "<group>"; };
 		0A165FE427E4EB6CED763581741B3C85 /* Pods-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 				2792CA2217667E0BDC01B242406427D9 /* UIView+HotPoint.swift */,
 				EE0F0AF0F9863E8CD041C523539C657D /* UIViewUtil.swift */,
 				09D8A5BC267AFAB80050602D /* DateFormatter+Ex.swift */,
+				0995DA8527AD5B1100BB9D54 /* UIStackView+Ex.swift */,
 			);
 			name = Extension;
 			path = CWLKit/Classes/Extension;
@@ -573,6 +577,7 @@
 				B64812D42FC79BFECAE9CF3BCDD3F51E /* Runtime+Ex.swift in Sources */,
 				7B173B56FC4D5CE09685E7167480ACA9 /* Stack.swift in Sources */,
 				4096CAEA9B19AB29E6F645B1D76C7A87 /* String+Ex.swift in Sources */,
+				0995DA8727AD5B1200BB9D54 /* UIStackView+Ex.swift in Sources */,
 				C9B937AB35C74298A7CC1127792FFD8C /* Tree.swift in Sources */,
 				CCEAD2DC3DC341FE0D334E2971A2147A /* UICollectionView+Extension.swift in Sources */,
 				F873EDEEB27CF90FE286114A434E2D97 /* UIColor+Extension.swift in Sources */,
@@ -625,6 +630,7 @@
 				ABF6E3D18AD6E44DB19244F229B1A54B /* Runtime+Ex.swift in Sources */,
 				A22CD4E2189A41728F0D40C008671844 /* Stack.swift in Sources */,
 				DA488E5C5D330AEC2EBF865D207375CA /* String+Ex.swift in Sources */,
+				0995DA8627AD5B1200BB9D54 /* UIStackView+Ex.swift in Sources */,
 				F9EEEEF3C01D21C1711485BE871084E7 /* Tree.swift in Sources */,
 				3261E6D5D3C6A92DEAE08A055794C3B0 /* UICollectionView+Extension.swift in Sources */,
 				E16F1EBBCEEB250393EC4FB82CA85151 /* UIColor+Extension.swift in Sources */,

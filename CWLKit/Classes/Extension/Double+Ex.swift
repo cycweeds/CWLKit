@@ -12,9 +12,15 @@ public extension Double {
         return Int(self)
     }
     
+    var uintValue: UInt {
+        return UInt(self)
+    }
+    
     var floatValue: Float {
         return Float(self)
     }
+    
+    
     
     var cgFloatValue: CGFloat {
         return CGFloat(self)

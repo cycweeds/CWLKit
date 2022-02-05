@@ -41,31 +41,18 @@ public extension Date {
     }
     
     var isToday: Bool {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy-MM-dd"
-//        return formatter.string(from: self) == formatter.string(from: Date())
-//
         return currentCalendar.isDateInToday(self)
     }
     
     var isYesterday: Bool {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy-MM-dd"
-//
-//        return formatter.string(from: self) == formatter.string(from: Date(timeIntervalSinceNow: -60 * 60 * 24))
-//
         return currentCalendar.isDateInYesterday(self)
     }
     
     var isTomorrow: Bool {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy-MM-dd"
-//        return formatter.string(from: self) == formatter.string(from: Date(timeIntervalSinceNow: 60 * 60 * 24))
-        
         return currentCalendar.isDateInTomorrow(self)
     }
     
-    /// 是否在周末  
+    /// 是否在周末
     var isInWeekend: Bool {
         return currentCalendar.isDateInWeekend(self)
     }
@@ -75,16 +62,16 @@ public extension Date {
     }
     
     var isInCurrentYear: Bool {
-           return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .year)
-       }
+        return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .year)
+    }
     
     var isInCurrentMonth: Bool {
-            return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .month)
-        }
+        return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .month)
+    }
     
     var isInCurrentWeek: Bool {
-           return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .weekOfYear)
-       }
+        return currentCalendar.isDate(self, equalTo: Date(), toGranularity: .weekOfYear)
+    }
     
     var currentCalendar: Calendar {
         return Calendar.current

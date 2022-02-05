@@ -8,7 +8,6 @@
 import Foundation
 
 
-// MARK: - Methods
 public extension CWLKit where Base : UIScrollView {
 
     /// SwifterSwift: Takes a snapshot of an entire ScrollView

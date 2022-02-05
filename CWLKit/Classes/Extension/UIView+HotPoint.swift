@@ -19,7 +19,7 @@ public extension UIView {
     var expandHotPoint: UIEdgeInsets? {
         set {
             _ = UIView.swizzlePointImplementation
-            objc_setAssociatedObject(self, &UIView.HotPointKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+            objc_setAssociatedObject(self, &UIView.HotPointKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         
         get {

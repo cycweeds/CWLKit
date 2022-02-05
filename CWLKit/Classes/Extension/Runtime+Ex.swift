@@ -9,6 +9,11 @@ import Foundation
 
 
 
+/// 交换对象方法
+/// - Parameters:
+///   - aClass: 类名
+///   - originalSelector: 原方法
+///   - swizzleSelector: 交换方法
 public func swizzleMethod(aClass: AnyClass, originalSelector: Selector, swizzleSelector: Selector) {
     guard let originalMethod = class_getInstanceMethod(aClass, originalSelector) else { return }
     guard let swizzledMethod = class_getInstanceMethod(aClass, swizzleSelector) else { return }
@@ -24,7 +29,8 @@ public func swizzleMethod(aClass: AnyClass, originalSelector: Selector, swizzleS
 
 
 /// 如果需要用对应的类型，字典定义Dictionary<String, Any>，对应value为Int8.self、Int16.self，下面用到的方法都需要更改为Dictionary<String, Any>
-let valueTypesMap: [String: String] = [
+///  https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100
+public let ObjectTypeEncodings: [String: String] = [
     "c" : "Int8",
     "s" : "Int16",
     "i" : "Int32",
@@ -35,6 +41,7 @@ let valueTypesMap: [String: String] = [
     "B" : "Bool",
     "d" : "Double",
     "f" : "Float",
+    "V" : "void",
     "{" : "Decimal"
 ]
 
@@ -50,31 +57,34 @@ public extension NSObject {
     class func subclasses() -> [String] {
         var count: UInt32 = 0, result: [String] = []
         let allClasses: AutoreleasingUnsafeMutablePointer<AnyClass> = objc_copyClassList(&count)!
-        for n in 0 ..< count {
+        for n in 0..<count {
             let someClass: AnyClass = allClasses[Int(n)]
             guard let someSuperClass = class_getSuperclass(someClass), String(describing: someSuperClass) == String(describing: self) else { continue }
             //返回的类会带module名，如果把module名截取了，就无法转换成对应的类了
             let className = NSStringFromClass(someClass)
-            
             result.append(className)
         }
         return result
     }
     
+    /// 获取ivar
+    /// - Returns: [name: type]
     class func getIvars() -> [String: String] {
         var count: UInt32 = 0
         guard let ivars = class_copyIvarList(self, &count) else { return [:] }
-        
+        var result = [String: String]()
         for i in 0..<count {
             let ivar = ivars[Int(i)]
             let name = ivar_getName(ivar)
-            let string = String(utf8String: name!)
-            if string != nil {
-                print(string!)                
+            let nameString = String(utf8String: name!)
+            
+           let type = String(utf8String: ivar_getTypeEncoding(ivar)!)!
+            if nameString != nil {
+                result.updateValue(valueType(withAttributes: type) ?? type, forKey: nameString!)
             }
         }
         
-        return [:]
+        return result
     }
     
     /// 获取属性名和类型列表
@@ -113,9 +123,7 @@ public extension NSObject {
     /// - Parameter attributes: attributes
     /// - Returns: 类型名
     private class func valueType(withAttributes attributes: String) -> String? {
-        let tmp = attributes as NSString
-        let letter = tmp.substring(with: NSMakeRange(1, 1))
-        guard let type = valueTypesMap[letter] else { return nil }
+        guard let type = ObjectTypeEncodings[attributes] else { return nil }
         return type
     }
     

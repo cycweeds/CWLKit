@@ -8,9 +8,6 @@
 import Foundation
 
 public extension String {
-    var toImage: UIImage? {
-        return UIImage(named: self)
-    }
     
     var intValue: Int? {
         return Int(self)
@@ -50,3 +47,9 @@ public extension String {
     }
 }
 
+
+public extension String {
+    var toImage: UIImage? {
+        return UIImage(named: self)
+    }
+}

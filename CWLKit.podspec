@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CWLKit'
-  s.version          = '1.2'
+  s.version          = '1.4'
   s.summary          = 'swift项目中常用的方法'
   s.swift_version = '5.0'
 
@@ -31,5 +31,5 @@ TODO: Add long description of the pod here.
 
   # 文件顺序不能换  不然会无法通过
   s.source_files = 'CWLKit/Classes/*','CWLKit/Classes/**/*'
-  
+
 end

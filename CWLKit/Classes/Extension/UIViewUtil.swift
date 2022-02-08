@@ -11,13 +11,7 @@ extension UIView: CWLProtocol { }
 
 public extension CWLKit where Base: UIView {
     
-    static func xibView<T: UIView>(classname: T.Type, owner: Any?, options: [UINib.OptionsKey : Any]? = nil) -> T {
-            if let view = Bundle.main.loadNibNamed(String(describing: classname), owner: owner, options: options)?.first as? T {
-                return view
-            } else {
-                fatalError("xib view not exist")
-            }
-        }
+   
     
     /// 获取View某一点的颜色
     ///

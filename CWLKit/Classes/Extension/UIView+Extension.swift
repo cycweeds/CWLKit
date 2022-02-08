@@ -168,5 +168,9 @@ public extension UIView {
     }
 }
 
-
+public extension UIView {
+    static func xibView(owner: Any? = nil) -> Self {
+        return Bundle.main.loadNibNamed(String(describing: self), owner: owner, options: nil)?.first as! Self
+    }
+}
 

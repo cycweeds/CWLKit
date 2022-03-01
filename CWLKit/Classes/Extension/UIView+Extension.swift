@@ -84,15 +84,33 @@ public extension UIView {
         }
     }
     
+    var maxY: CGFloat {
+        get {
+            return self.frame.maxY
+        }
+    }
+    
     var mid_x: CGFloat {
         get {
-            return self.frame.minX
+            return self.frame.midX
+        }
+    }
+    
+    var midX: CGFloat {
+        get {
+            return self.frame.midX
         }
     }
     
     var mid_y: CGFloat {
         get {
-            return self.frame.minY
+            return self.frame.midY
+        }
+    }
+    
+    var midY: CGFloat {
+        get {
+            return self.frame.midY
         }
     }
 }
